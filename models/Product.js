@@ -56,7 +56,18 @@ const productSchema = new mongoose.Schema({
     min: 0,
     max: 100,
     default: 0
+  },
+  salesCount: {
+    type: Number,
+    min: 0,
+    default: 0,
+    required: true
+  },
+  isFeatured: {
+    type: Boolean,
+    required: true
   }
+
 }, {
   timestamps: true
 });
